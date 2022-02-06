@@ -44,12 +44,12 @@ Complex add_n_complex(int n,Complex c[n])
 }
 void output(int n,Complex c[n],Complex result)
 {
-    printf("%f+%fi\n",c[0].real,c[0].imaginary);
+    printf("%0.0f+%0.0fi\n",c[0].real,c[0].imaginary);
   for(int i=1;i<n;i++)
   {
-    printf("+ %f+%fi\n",c[i].real,c[i].imaginary);
+    printf("+ %0.0f+%0.0fi\n",c[i].real,c[i].imaginary);
   }
-  printf("is %f+%fi\n",result.real,result.imaginary);
+  printf("is %0.0f+%0.0fi\n",result.real,result.imaginary);
 }
 int main()
 {

@@ -147,17 +147,17 @@ main () at p8final.c:61
 output (n=2, c=0x7ffd8b5aad10, result=...) at p8final.c:46
 46    printf("%f+%fi\n",c[0].real,c[0].imaginary);
 (gdb) n
-2.000000+3.000000i
+2+3i
 47    for(int i=1;i<n;i++)
 (gdb) n
 49      printf("+ %f+%fi\n",c[i].real,c[i].imaginary);
 (gdb) n
-+ 4.000000+5.000000i
++ 4+5i
 47    for(int i=1;i<n;i++)
 (gdb) n
 51    printf("is %f+%fi\n",result.real,result.imaginary);
 (gdb) n
-is 6.000000+8.000000i
+is 6+8i
 52  }
 (gdb) n
 main () at p8final.c:62
